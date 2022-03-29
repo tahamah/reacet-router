@@ -25,8 +25,5 @@ const Friends = () => {
         </div>
     )
 }
-git add .
-git commit -m ""
-git push
 
 export default Friends
