@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Friend from '../Friend/Friend'
 
 const Friends = () => {
     const [friends, setFriends] = useState([])
@@ -17,8 +18,15 @@ const Friends = () => {
                     please give me some feedback: {friends.length}
                 </small>{' '}
             </p>
+
+            {friends.map((friend) => (
+                <Friend key={friend.id} friend={friend} />
+            ))}
         </div>
     )
 }
+git add .
+git commit -m ""
+git push
 
 export default Friends
